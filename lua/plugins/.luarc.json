@@ -1,5 +1,10 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "null_ls"
+    ],
+    "diagnostics.disable": [
+        "redundant-value",
+        "undefined-global"
     ]
 }
