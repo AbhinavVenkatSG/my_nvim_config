@@ -8,11 +8,6 @@ return {
     end,
   },
 
-{
-    "mfussenegger/nvim-jdtls",
-    dependencies = { "mfussenegger/nvim-dap" }, -- Recommended for debugging Java
-  },
-
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
