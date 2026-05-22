@@ -1,5 +1,6 @@
 return {
   "nvimtools/none-ls.nvim",
+  event = "VeryLazy",
   dependencies = {
     "nvimtools/none-ls-extras.nvim",
   },
@@ -27,10 +28,8 @@ return {
       },
     })
 
-    -- Keymap to format current file with LSP/null-ls
-    vim.keymap.set("n", "<leader>gf", function()
+    vim.keymap.set("n", "<Leader>gf", function()
       vim.lsp.buf.format({ async = true })
     end, { desc = "Format current buffer" })
   end,
 }
-
