@@ -1,0 +1,3 @@
+[[manager.prepend_keymap]]
+on = [ "C-T" ]
+run = "shell 'wezterm cli spawn --cwd \"%d\"'"
