@@ -15,7 +15,7 @@ return {
 
     { "<Leader>oa", function() require("opencode").ask("@this: ", { submit = true }) end, desc = "Ask opencode…", mode = { "n", "x" } },
     { "<Leader>os", function() require("opencode").select() end, desc = "Select opencode…", mode = { "n", "x" } },
-    { "<Leader>ot", function() require("opencode").toggle() end, desc = "Toggle opencode", mode = { "n", "t" } },
+    { "<Leader>oo", function() require("opencode").toggle() end, desc = "[O]pencode t[O]ggle", mode = { "n", "t" } },
     { "go", function() return require("opencode").operator("@this ") end, desc = "Add range to opencode", expr = true, mode = { "n", "x" } },
     { "goo", function() return require("opencode").operator("@this ") .. " _" end, desc = "Add line to opencode", expr = true, mode = "n" },
     { "<S-C-u>", function() require("opencode").command("session.half.page.up") end, desc = "Scroll opencode up", mode = "n" },
